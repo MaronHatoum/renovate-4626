@@ -1,0 +1,12 @@
+{
+  "extends": ["config:base"],
+  "regexManagers": [
+    {
+      "fileMatch": ["^cloudbuild.yaml$"],
+      "matchStrings": [
+        "name: (?<depName>.*):(?<currentValue>.*)\n"
+      ],
+      "datasourceTemplate": "docker"
+    }
+  ]
+}
