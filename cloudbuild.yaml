@@ -1,4 +1,4 @@
 ---
 steps:
-  - name: quay.io/helmpack/chart-testing:v2.4.1
+  - name: quay.io/helmpack/chart-testing:v3.7.0
     args: [ct, lint, --all, --debug, --chart-dirs, charts]
